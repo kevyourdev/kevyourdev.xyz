@@ -1,3 +1,3 @@
-# kevdev.xyz👨‍💻️📁🌐
+# kevyourdev.xyz👨‍💻️📁🌐
 
-Repo for [my simple splash page](https://kevdev.xyz).
+Repo for [my simple splash page](https://kevyourdev.xyz).
