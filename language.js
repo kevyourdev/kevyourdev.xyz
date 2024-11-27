@@ -40,7 +40,43 @@ const translations = {
         name: "Name",
         email: "Email",
         message: "Message",
-        send: "Send Message"
+        send: "Send Message",
+        
+        // Additional translations for timeline items
+        softwareEngineer: "Software Engineer",
+        applicationDev: "Application Developer",
+        fintechIntern: "FinTech Development Intern",
+        blockchainIntern: "Blockchain and NFT Intern",
+        androidIntern: "Android Development Intern",
+        
+        // Timeline descriptions
+        esimDesc: "Responsible for developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).",
+        ibmDesc: "Collaborated with backend engineers and UI designers to create robust frontend solutions using jQuery, ReactJS, Bootstrap, Angular, and PrimeNG.",
+        ctbcDesc: "Responsible for developing RPA programs and full-stack development using Java Spring framework.",
+        fansiDesc: "Responsible for writing articles, blockchain research, and social media marketing.",
+        sabfDesc: "Responsible for developing applications using Java/Kotlin.",
+        
+        // Featured work
+        esimSystem: "eSIM System",
+        ibmFrontend: "IBM Frontend",
+        rpaDev: "RPA Development",
+        
+        // Time periods
+        present: "Present",
+        timeFormat: "{startDate} - {endDate}",
+        
+        // Additional translations
+        timeDesc: "Duration",
+        company: "Company",
+        role: "Role",
+        description: "Description",
+        skills: "Skills Used",
+        viewProject: "View Project",
+        sendMessage: "Send Message",
+        
+        // Blog page
+        loading: "Loading posts...",
+        loadError: "Failed to load blog posts. Please try again later.",
     },
     zh: {
         // Home page
@@ -83,7 +119,43 @@ const translations = {
         name: "姓名",
         email: "電子郵件",
         message: "訊息",
-        send: "發送訊息"
+        send: "發送訊息",
+        
+        // Additional translations for timeline items
+        softwareEngineer: "軟體工程師",
+        applicationDev: "應用程式開發工程師",
+        fintechIntern: "金融科技實習生",
+        blockchainIntern: "區塊鏈實習生",
+        androidIntern: "Android 開發實習生",
+        
+        // Timeline descriptions
+        esimDesc: "負責使用 Node.js 和 MySQL 開發 eSIM 系統的後端 API。",
+        ibmDesc: "與後端工程師和UI設計師合作，使用 jQuery、ReactJS、Bootstrap、Angular 和 PrimeNG 進行前端開發。",
+        ctbcDesc: "負責開發 RPA 程式以及使用 Java Spring framework 進行全端開發。",
+        fansiDesc: "負責撰寫文章、區塊鏈研究和社群媒體行銷。",
+        sabfDesc: "負責使用 Java/Kotlin 進行應用程式開發。",
+        
+        // Featured work
+        esimSystem: "eSIM 系統",
+        ibmFrontend: "IBM 前端開發",
+        rpaDev: "RPA 開發",
+        
+        // Time periods
+        present: "至今",
+        timeFormat: "{startDate} - {endDate}",
+        
+        // Additional translations
+        timeDesc: "時間",
+        company: "公司",
+        role: "職位",
+        description: "描述",
+        skills: "使用技能",
+        viewProject: "查看專案",
+        sendMessage: "發送訊息",
+        
+        // Blog page
+        loading: "載入文章中...",
+        loadError: "無法載入文章，請稍後再試。",
     }
 };
 
@@ -113,6 +185,7 @@ updateContent(currentLang);
 languageToggle.addEventListener('click', () => {
     currentLang = currentLang === 'en' ? 'zh' : 'en';
     localStorage.setItem('language', currentLang);
+    document.documentElement.setAttribute('lang', currentLang);
     updateContent(currentLang);
     
     // Add rotation animation
@@ -125,4 +198,19 @@ languageToggle.addEventListener('click', () => {
 // Update content when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     updateContent(currentLang);
-}); 
+});
+
+// Add this to language.js
+function initializeLanguage() {
+    const savedLang = localStorage.getItem('language') || 'en';
+    document.documentElement.setAttribute('lang', savedLang);
+    updateContent(savedLang);
+}
+
+// Call initializeLanguage when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeLanguage);
+
+// Add this to handle the send button in contact form
+if (document.querySelector('button[type="submit"]')) {
+    document.querySelector('button[type="submit"]').setAttribute('data-i18n', 'send');
+} 
