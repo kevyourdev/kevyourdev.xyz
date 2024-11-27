@@ -139,22 +139,24 @@ header {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.98);
+    background: #1a1a1a;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    gap: 4rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
   nav.mobile-nav.active {
     transform: translateX(0);
   }
   nav.mobile-nav a {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
   }
   /* Dark mode adjustments */
   .dark header {
@@ -337,7 +339,7 @@ a {
     display: none;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #000;
+    color: inherit;
     background: none;
     border: none;
     cursor: pointer;
@@ -350,12 +352,12 @@ a {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #fff;
+    background: #1a1a1a;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
@@ -366,17 +368,21 @@ a {
 }
 
 .mobile-nav a {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 400;
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .close-menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     background: none;
     border: none;
     cursor: pointer;
-    color: #000;
+    color: white;
+    font-size: 2rem;
 }
 
 /* Dark mode adjustments */
