@@ -12,11 +12,10 @@
 </head>
 <body class="bg-white text-black">
     <div class="container mx-auto px-4">
-        <header class="flex justify-between items-center py-6 fade-in">
-            <div class="text-3xl font-bold logo">KW</div>
+        <header class="flex justify-between items-center py-6 fade-in sticky top-0 bg-white z-50">
+            <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
             <nav class="hidden md:flex space-x-6 mr-6">
                 <a href="/" class="hover:text-gray-500">Home</a>
-                <a href="/about.html" class="hover:text-gray-500">About</a>
                 <a href="/blog.html" class="hover:text-gray-500">Blog</a>
                 <a href="/contact.html" class="hover:text-gray-500">Contact</a>
             </nav>
@@ -27,9 +26,9 @@
             </div>
         </header>
 
-        <main class="py-12 fade-in">
-            <h1 class="text-6xl font-bold text-center mb-12">Blog</h1>
-            <div id="blog-posts" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <main class="py-12">
+            <h1 class="text-6xl font-bold text-center mb-12 slide-up">Blog</h1>
+            <div id="blog-posts" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto scale-up">
                 <!-- Posts will be dynamically inserted here -->
                 <div class="col-span-2 text-center">
                     <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
@@ -52,7 +51,7 @@
                     const blogPostsContainer = document.getElementById('blog-posts');
                     blogPostsContainer.innerHTML = ''; // Clear loading spinner
                     
-                    data.items.forEach(post => {
+                    data.items.forEach((post, index) => {
                         // Extract first image from content if available
                         const tempDiv = document.createElement('div');
                         tempDiv.innerHTML = post.content;
@@ -70,7 +69,7 @@
                         });
                         
                         const articleHTML = `
-                            <article class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                            <article class="border rounded-lg p-6 hover:shadow-lg transition-shadow slide-up" style="animation-delay: ${index * 0.1}s">
                                 ${imageUrl ? `<img src="${imageUrl}" alt="${post.title}" class="w-full h-48 object-cover mb-4 rounded">` : ''}
                                 <h2 class="text-2xl font-bold mb-4">${post.title}</h2>
                                 <p class="text-gray-600 mb-4">${publishDate}</p>
