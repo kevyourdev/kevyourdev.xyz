@@ -130,3 +130,116 @@ header {
 a {
   transition: all 0.2s ease-in-out;
 }
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #000;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Dark mode styles */
+.dark body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.dark header {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+.dark .bg-gray-50 {
+  background-color: #2a2a2a;
+}
+
+.dark .text-gray-600,
+.dark .text-gray-700 {
+  color: #d1d1d1;
+}
+
+.dark .border {
+  border-color: #404040;
+}
+
+/* Fix for icons in dark mode */
+.dark .w-8.h-8.bg-black {
+  background-color: #404040;
+}
+
+.dark .w-12.h-12.bg-black {
+  background-color: #404040;
+}
+
+/* Fix for buttons in dark mode */
+.dark .bg-black {
+  background-color: #404040;
+}
+
+.dark .hover\:bg-gray-800:hover {
+  background-color: #2a2a2a;
+}
+
+/* Fix for timeline dots in dark mode */
+.dark .bg-gray-200 {
+  background-color: #404040;
+}
+
+/* Fix for featured work cards in dark mode */
+.dark .bg-gray-50.rounded-xl {
+  background-color: #2a2a2a;
+  border: 1px solid #404040;
+}
+
+/* Fix for links in dark mode */
+.dark a.text-black {
+  color: #fff;
+}
+
+.dark .hover\:text-gray-500:hover {
+  color: #d1d1d1;
+}
+
+/* Fix for theme toggle in dark mode */
+.dark .theme-toggle {
+  background-color: #404040;
+  color: #fff;
+}
+
+.dark .theme-toggle:hover {
+  background-color: #2a2a2a;
+}
+
+/* Fix for form elements in dark mode */
+.dark input,
+.dark textarea {
+  background-color: #2a2a2a;
+  border-color: #404040;
+  color: #fff;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+  border-color: #d1d1d1;
+  outline: none;
+}
+
+/* Fix for loading spinner in dark mode */
+.dark .border-b-2 {
+  border-color: #fff;
+}
