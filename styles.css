@@ -116,13 +116,94 @@ header {
     padding: 0.5rem 0;
   }
   header {
+    padding: 1.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.98);
+  }
+  .menu-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .menu-button i {
+    font-size: 1.5rem;
+  }
+  /* Mobile nav styles */
+  nav.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
   }
-  header .logo,
-  header nav,
-  header .social-icons {
-    margin-top: 1rem;
+  nav.mobile-nav.active {
+    transform: translateX(0);
+  }
+  nav.mobile-nav a {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+  /* Dark mode adjustments */
+  .dark header {
+    background-color: rgba(26, 26, 26, 0.98);
+  }
+  .dark nav.mobile-nav {
+    background-color: rgba(26, 26, 26, 0.98);
+  }
+  /* Mobile adjustments for sections */
+  #work.bg-gray-50,
+  #about.bg-gray-50 {
+    background-color: transparent;
+  }
+  
+  .dark #work.bg-gray-50,
+  .dark #about.bg-gray-50 {
+    background-color: transparent;
+  }
+
+  /* Adjust Work Timeline layout for mobile */
+  #work .relative {
+    /* Remove the vertical line */
+    .absolute.left-1/2 {
+      display: none;
+    }
+  }
+
+  /* Stack timeline items vertically on mobile */
+  #work .flex.items-center.justify-between {
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  /* Adjust width and alignment for timeline content */
+  #work .w-5/12 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* Remove the dots on mobile */
+  #work .absolute.left-1/2.transform.-translate-x-1/2.w-4.h-4 {
+    display: none;
+  }
+
+  /* Add spacing between timeline items */
+  #work .space-y-12 > div {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -276,4 +357,70 @@ a {
 
 .dark .language-toggle:hover {
     background-color: #2a2a2a;
+}
+
+/* Mobile menu styles */
+.menu-button {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile-nav.active {
+    transform: translateX(0);
+}
+
+.mobile-nav a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Dark mode adjustments */
+.dark .menu-button,
+.dark .mobile-nav a,
+.dark .close-menu {
+    color: #fff;
+}
+
+.dark .mobile-nav {
+    background: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }

@@ -22,7 +22,18 @@
         class="flex justify-between items-center py-6 fade-in sticky top-0 bg-white z-50"
       >
         <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
+        <button class="md:hidden menu-button">
+          Menu <i class="fas fa-bars"></i>
+        </button>
         <nav class="hidden md:flex space-x-6 mr-6">
+          <a href="#home" class="hover:text-gray-500" data-i18n="home">Home</a>
+          <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog">Blog</a>
+          <a href="/contact.html" class="hover:text-gray-500" data-i18n="contact">Contact</a>
+        </nav>
+        <nav class="mobile-nav md:hidden">
+          <button class="close-menu absolute top-8 right-8">
+            <i class="fas fa-times text-2xl"></i>
+          </button>
           <a href="#home" class="hover:text-gray-500" data-i18n="home">Home</a>
           <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog">Blog</a>
           <a href="/contact.html" class="hover:text-gray-500" data-i18n="contact">Contact</a>
@@ -156,24 +167,20 @@
         </section>
 
         <!-- Work Timeline Section -->
-        <section id="work" class="py-24 bg-gray-50 slide-up">
+        <section id="work" class="py-24 bg-gray-50 slide-up hidden md:block">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-bold mb-12 text-center" data-i18n="workTimeline">Work Timeline</h2>
             <div class="relative">
-              <div
-                class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"
-              ></div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 md:block hidden"></div>
               <div class="space-y-12">
                 <!-- Current Role -->
                 <div class="relative flex items-center justify-between">
-                  <div class="w-5/12 pr-8 text-right">
+                  <div class="w-5/12 pr-8 md:text-right">
                     <h3 class="text-2xl font-bold" data-i18n="softwareEngineer">Software Engineer</h3>
                     <p class="text-xl">VOCOM INTERNATIONAL</p>
                     <p class="text-gray-600 mt-1">Dec 2023 - <span data-i18n="present">Present</span></p>
                   </div>
-                  <div
-                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full"
-                  ></div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full md:block hidden"></div>
                   <div class="w-5/12 pl-8">
                     <p class="text-gray-700" data-i18n="esimDesc">
                       Responsible for developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).
