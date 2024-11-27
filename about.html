@@ -18,9 +18,25 @@
   </head>
   <body class="bg-white text-black">
     <div class="container mx-auto px-4">
-      <!-- Header remains the same -->
       <header class="flex justify-between items-center py-6 fade-in">
-        <!-- ... existing header content ... -->
+        <div class="text-3xl font-bold logo">KW</div>
+        <nav class="hidden md:flex space-x-6 mr-6">
+          <a href="/" class="hover:text-gray-500">Home</a>
+          <a href="/about.html" class="hover:text-gray-500">About</a>
+          <a href="/blog.html" class="hover:text-gray-500">Blog</a>
+          <a href="/contact.html" class="hover:text-gray-500">Contact</a>
+        </nav>
+        <div class="flex space-x-4 social-icons">
+          <a class="hover:text-gray-500" href="https://www.linkedin.com/in/kevyourdev"
+            ><i class="fab fa-linkedin-in"></i></a
+          >
+          <a class="hover:text-gray-500" href="https://www.instagram.com/wyu3h/"
+            ><i class="fab fa-instagram"></i></a
+          >
+          <a class="hover:text-gray-500" href="https://github.com/kevyourdev"
+            ><i class="fab fa-github"></i></a
+          >
+        </div>
       </header>
 
       <main class="py-12 fade-in">
@@ -151,9 +167,77 @@
           <!-- Work Timeline -->
           <section class="mb-16">
             <h2 class="text-4xl font-bold mb-8">Work Timeline</h2>
-            <div class="space-y-8">
-              <!-- Work history items remain the same but with updated styling -->
-              <!-- ... existing work history content ... -->
+            <div class="relative">
+                <!-- Vertical line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-12">
+                    <!-- Current Role -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 pr-8 text-right">
+                            <h3 class="text-2xl font-bold">Software Engineer</h3>
+                            <p class="text-xl">VOCOM INTERNATIONAL</p>
+                            <p class="text-gray-600 mt-1">Dec 2023 - Present</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="w-5/12 pl-8">
+                            <p class="text-gray-700">Responsible for developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).</p>
+                        </div>
+                    </div>
+
+                    <!-- IBM Role -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 pr-8 text-right">
+                            <h3 class="text-2xl font-bold">Application Developer</h3>
+                            <p class="text-xl">IBM</p>
+                            <p class="text-gray-600 mt-1">July 2023 - November 2023</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="w-5/12 pl-8">
+                            <p class="text-gray-700">Collaborated with backend engineers, UI designers to utilize jQuery, ReactJS, Bootstrap, Angular, and PrimeNG for frontend development.</p>
+                        </div>
+                    </div>
+
+                    <!-- CTBC Bank Role -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 pr-8 text-right">
+                            <h3 class="text-2xl font-bold">FinTech Development Intern</h3>
+                            <p class="text-xl">CTBC Bank(中國信託)</p>
+                            <p class="text-gray-600 mt-1">February 2022 - June 2022</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="w-5/12 pl-8">
+                            <p class="text-gray-700">Responsible for developing RPA programs and also full-stack development using Java (Spring framework).</p>
+                        </div>
+                    </div>
+
+                    <!-- Fansi Role -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 pr-8 text-right">
+                            <h3 class="text-2xl font-bold">Blockchain and NFT Intern</h3>
+                            <p class="text-xl">Fansi</p>
+                            <p class="text-gray-600 mt-1">August 2021 - November 2021</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="w-5/12 pl-8">
+                            <p class="text-gray-700">Responsible for composing articles, blockchain research, and social media marketing.</p>
+                        </div>
+                    </div>
+
+                    <!-- SABF Role -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 pr-8 text-right">
+                            <h3 class="text-2xl font-bold">Android Development Intern</h3>
+                            <p class="text-xl">SABF (印度商亞竹基金會)</p>
+                            <p class="text-gray-600 mt-1">June 2021 - August 2021</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="w-5/12 pl-8">
+                            <p class="text-gray-700">Responsible for app development using Java/Kotlin.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
           </section>
         </div>
