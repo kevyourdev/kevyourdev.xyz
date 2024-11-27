@@ -163,47 +163,20 @@ header {
   .dark nav.mobile-nav {
     background-color: rgba(26, 26, 26, 0.98);
   }
-  /* Mobile adjustments for sections */
-  #work.bg-gray-50,
+  /* Remove grey background for About (My Journey) section */
   #about.bg-gray-50 {
     background-color: transparent;
   }
   
-  .dark #work.bg-gray-50,
-  .dark #about.bg-gray-50 {
+  /* Remove grey background for Work Timeline section */
+  #work.bg-gray-50 {
     background-color: transparent;
   }
-
-  /* Adjust Work Timeline layout for mobile */
-  #work .relative {
-    /* Remove the vertical line */
-    .absolute.left-1/2 {
-      display: none;
-    }
-  }
-
-  /* Stack timeline items vertically on mobile */
-  #work .flex.items-center.justify-between {
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 3rem;
-  }
-
-  /* Adjust width and alignment for timeline content */
-  #work .w-5/12 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-  }
-
-  /* Remove the dots on mobile */
-  #work .absolute.left-1/2.transform.-translate-x-1/2.w-4.h-4 {
-    display: none;
-  }
-
-  /* Add spacing between timeline items */
-  #work .space-y-12 > div {
-    margin-bottom: 2.5rem;
+  
+  /* Ensure dark mode also has transparent background on mobile */
+  .dark #about.bg-gray-50,
+  .dark #work.bg-gray-50 {
+    background-color: transparent;
   }
 }
 
