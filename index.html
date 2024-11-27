@@ -23,9 +23,9 @@
       >
         <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
         <nav class="hidden md:flex space-x-6 mr-6">
-          <a href="#home" class="hover:text-gray-500">Home</a>
-          <a href="/blog.html" class="hover:text-gray-500">Blog</a>
-          <a href="/contact.html" class="hover:text-gray-500">Contact</a>
+          <a href="#home" class="hover:text-gray-500" data-i18n="home">Home</a>
+          <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog">Blog</a>
+          <a href="/contact.html" class="hover:text-gray-500" data-i18n="contact">Contact</a>
         </nav>
         <div class="flex space-x-4 social-icons">
           <a
@@ -55,8 +55,8 @@
                 />
               </div>
               <div class="md:w-1/2 space-y-6 slide-in-right">
-                <h1 class="text-6xl font-bold mb-4">Hey, I'm Kevin</h1>
-                <p class="text-xl text-gray-600 mb-6">
+                <h1 class="text-6xl font-bold mb-4" data-i18n="greeting">Hey, I'm Kevin</h1>
+                <p class="text-xl text-gray-600 mb-6" data-i18n="subtitle">
                   A Software Engineer crafting digital experiences that make a
                   difference.
                 </p>
@@ -67,7 +67,7 @@
                     >
                       <i class="fas fa-code text-white"></i>
                     </div>
-                    <span class="text-lg">Full-stack Developer</span>
+                    <span class="text-lg" data-i18n="fullstack">Full-stack Developer</span>
                   </div>
                   <div class="flex items-center space-x-3">
                     <div
@@ -75,7 +75,7 @@
                     >
                       <i class="fas fa-mobile-alt text-white"></i>
                     </div>
-                    <span class="text-lg">Mobile App Developer</span>
+                    <span class="text-lg" data-i18n="mobile">Mobile App Developer</span>
                   </div>
                   <div class="flex items-center space-x-3">
                     <div
@@ -83,13 +83,14 @@
                     >
                       <i class="fas fa-language text-white"></i>
                     </div>
-                    <span class="text-lg">Bilingual Professional</span>
+                    <span class="text-lg" data-i18n="bilingual">Bilingual Professional</span>
                   </div>
                 </div>
                 <div class="pt-6">
                   <a
                     href="#about"
                     class="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+                    data-i18n="learnMore"
                   >
                     Learn More About Me
                   </a>
@@ -103,22 +104,22 @@
         <section id="about" class="py-24 bg-gray-50 slide-up">
           <div class="max-w-4xl mx-auto">
             <div class="prose prose-lg max-w-none">
-              <h2 class="text-4xl font-bold mb-8">My Journey</h2>
-              <p class="mb-6">
+              <h2 class="text-4xl font-bold mb-8" data-i18n="journey">My Journey</h2>
+              <p class="mb-6" data-i18n="journeyText1">
                 My journey in technology began during my time at National Chung
                 Cheng University, where I studied Computer Science and
                 Information Engineering. Throughout my academic career, I
                 developed a strong foundation in software development while
                 maintaining excellence in both technical and language skills.
               </p>
-              <p class="mb-6">
+              <p class="mb-6" data-i18n="journeyText2">
                 After graduation, I joined IBM as an Application Developer,
                 where I collaborated with talented engineers and designers to
                 create robust frontend solutions. This experience led me to my
                 current role at VOCOM INTERNATIONAL, where I'm responsible for
                 developing backend APIs for eSIM systems.
               </p>
-              <p>
+              <p data-i18n="journeyText3">
                 My diverse experience includes internships in FinTech at CTBC
                 Bank, blockchain technology at Fansi, and Android development at
                 SABF. Each role has contributed to my growth as a well-rounded
@@ -381,5 +382,6 @@
     </button>
 
     <script src="theme.js"></script>
+    <script src="language.js"></script>
   </body>
 </html>
