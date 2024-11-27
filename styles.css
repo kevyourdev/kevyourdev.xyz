@@ -1,5 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 768px) {
@@ -40,4 +49,9 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+/* Smooth transition for hover effects */
+a {
+  transition: all 0.2s ease-in-out;
 }
