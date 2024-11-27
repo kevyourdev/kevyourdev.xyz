@@ -1,98 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - kevyourdev.xyz</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="/favicon/favicon-32x32.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="bg-white text-black">
+  </head>
+  <body class="bg-white text-black">
     <div class="container mx-auto px-4">
-        <header class="flex justify-between items-center py-6 fade-in sticky top-0 bg-white z-50">
-            <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
-            <nav class="hidden md:flex space-x-6 mr-6">
-                <a href="/" class="hover:text-gray-500">Home</a>
-                <a href="/blog.html" class="hover:text-gray-500">Blog</a>
-                <a href="/contact.html" class="hover:text-gray-500">Contact</a>
-            </nav>
-            <div class="flex space-x-4 social-icons">
-                <a class="hover:text-gray-500" href="https://www.linkedin.com/in/kevyourdev"><i class="fab fa-linkedin-in"></i></a>
-                <a class="hover:text-gray-500" href="https://www.instagram.com/wyu3h/"><i class="fab fa-instagram"></i></a>
-                <a class="hover:text-gray-500" href="https://github.com/kevyourdev"><i class="fab fa-github"></i></a>
-            </div>
-        </header>
+      <header
+        class="flex justify-between items-center py-6 fade-in sticky top-0 bg-white z-50"
+      >
+        <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
+        <nav class="hidden md:flex space-x-6 mr-6">
+          <a href="/" class="hover:text-gray-500">Home</a>
+          <a href="/blog.html" class="hover:text-gray-500">Blog</a>
+          <a href="/contact.html" class="hover:text-gray-500">Contact</a>
+        </nav>
+        <div class="flex space-x-4 social-icons">
+          <a
+            class="hover:text-gray-500"
+            href="https://www.linkedin.com/in/kevyourdev"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="hover:text-gray-500" href="https://www.instagram.com/wyu3h/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="hover:text-gray-500" href="https://github.com/kevyourdev"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </header>
 
-        <main class="py-12">
-            <h1 class="text-6xl font-bold text-center mb-12 slide-up">Blog</h1>
-            <div id="blog-posts" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto scale-up">
-                <!-- Posts will be dynamically inserted here -->
-                <div class="col-span-2 text-center">
-                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
-                    <p class="mt-4">Loading posts...</p>
-                </div>
-            </div>
-        </main>
+      <main class="py-12">
+        <h1 class="text-6xl font-bold text-center mb-12 slide-up">Blog</h1>
+        <h2 class="text-4xl font-bold text-center mb-12 slide-up">
+          Under Construction 🚧
+        </h2>
+        <div
+          id="blog-posts"
+          class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto scale-up"
+        >
+          <!-- Posts will be dynamically inserted here -->
+          <div class="col-span-2 text-center">
+            <div
+              class="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"
+            ></div>
+            <p class="mt-4">Loading posts...</p>
+          </div>
+        </div>
+      </main>
     </div>
 
     <script>
-        async function fetchMediumPosts() {
-            const MEDIUM_USERNAME = '@kevyourdev'; // Replace with your Medium username
-            const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${MEDIUM_USERNAME}`;
-            
-            try {
-                const response = await fetch(RSS_URL);
-                const data = await response.json();
-                
-                if (data.status === 'ok') {
-                    const blogPostsContainer = document.getElementById('blog-posts');
-                    blogPostsContainer.innerHTML = ''; // Clear loading spinner
-                    
-                    data.items.forEach((post, index) => {
-                        // Extract first image from content if available
-                        const tempDiv = document.createElement('div');
-                        tempDiv.innerHTML = post.content;
-                        const firstImage = tempDiv.querySelector('img');
-                        const imageUrl = firstImage ? firstImage.src : '';
-                        
-                        // Create post preview (first 150 characters)
-                        const preview = post.content.replace(/<[^>]*>/g, '').slice(0, 150) + '...';
-                        
-                        // Format date
-                        const publishDate = new Date(post.pubDate).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                        });
-                        
-                        const articleHTML = `
-                            <article class="border rounded-lg p-6 hover:shadow-lg transition-shadow slide-up" style="animation-delay: ${index * 0.1}s">
-                                ${imageUrl ? `<img src="${imageUrl}" alt="${post.title}" class="w-full h-48 object-cover mb-4 rounded">` : ''}
-                                <h2 class="text-2xl font-bold mb-4">${post.title}</h2>
+      async function fetchMediumPosts() {
+        const MEDIUM_USERNAME = '@dailyStoic'; // Replace with your Medium username
+        const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${MEDIUM_USERNAME}`;
+
+        try {
+          const response = await fetch(RSS_URL);
+          const data = await response.json();
+
+          if (data.status === 'ok') {
+            const blogPostsContainer = document.getElementById('blog-posts');
+            blogPostsContainer.innerHTML = ''; // Clear loading spinner
+
+            data.items.forEach((post, index) => {
+              // Extract first image from content if available
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = post.content;
+              const firstImage = tempDiv.querySelector('img');
+              const imageUrl = firstImage ? firstImage.src : '';
+
+              // Create post preview (first 150 characters)
+              const preview =
+                post.content.replace(/<[^>]*>/g, '').slice(0, 150) + '...';
+
+              // Format date
+              const publishDate = new Date(post.pubDate).toLocaleDateString(
+                'en-US',
+                {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                }
+              );
+
+              const articleHTML = `
+                            <article class="border rounded-lg p-6 hover:shadow-lg transition-shadow slide-up" style="animation-delay: ${
+                              index * 0.1
+                            }s">
+                                ${
+                                  imageUrl
+                                    ? `<img src="${imageUrl}" alt="${post.title}" class="w-full h-48 object-cover mb-4 rounded">`
+                                    : ''
+                                }
+                                <h2 class="text-2xl font-bold mb-4">${
+                                  post.title
+                                }</h2>
                                 <p class="text-gray-600 mb-4">${publishDate}</p>
                                 <p class="mb-4">${preview}</p>
-                                <a href="${post.link}" target="_blank" class="text-black font-bold hover:underline">Read more →</a>
+                                <a href="${
+                                  post.link
+                                }" target="_blank" class="text-black font-bold hover:underline">Read more →</a>
                             </article>
                         `;
-                        
-                        blogPostsContainer.innerHTML += articleHTML;
-                    });
-                }
-            } catch (error) {
-                console.error('Error fetching Medium posts:', error);
-                document.getElementById('blog-posts').innerHTML = `
+
+              blogPostsContainer.innerHTML += articleHTML;
+            });
+          }
+        } catch (error) {
+          console.error('Error fetching Medium posts:', error);
+          document.getElementById('blog-posts').innerHTML = `
                     <div class="col-span-2 text-center">
                         <p class="text-red-500">Failed to load blog posts. Please try again later.</p>
                     </div>
                 `;
-            }
         }
+      }
 
-        // Fetch posts when page loads
-        fetchMediumPosts();
+      // Fetch posts when page loads
+      fetchMediumPosts();
     </script>
-</body>
+  </body>
 </html>
