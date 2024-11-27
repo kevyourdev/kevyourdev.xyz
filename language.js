@@ -161,43 +161,110 @@ const translations = {
 
 function updateContent(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
+    elements.forEach((element, index) => {
+        // Add fade-out animation
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(10px)';
+        element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+
+        // Stagger the animations
+        setTimeout(() => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+            // Add fade-in animation
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }, index * 50); // Stagger each element by 50ms
     });
 }
 
-// Add language toggle button
+// Add language toggle button with animation
 const languageToggle = document.createElement('button');
 languageToggle.id = 'language-toggle';
 languageToggle.className = 'language-toggle';
 languageToggle.setAttribute('aria-label', 'Toggle language');
-languageToggle.textContent = 'EN/中';
+languageToggle.innerHTML = `
+    <span class="lang-text" style="transition: all 0.3s ease">EN/中</span>
+`;
 document.body.appendChild(languageToggle);
 
 // Initialize language
 let currentLang = localStorage.getItem('language') || 'en';
 updateContent(currentLang);
 
-// Toggle language on button click
+// Toggle language on button click with enhanced animations
 languageToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'zh' : 'en';
-    localStorage.setItem('language', currentLang);
-    document.documentElement.setAttribute('lang', currentLang);
-    updateContent(currentLang);
+    // Disable button during animation
+    languageToggle.disabled = true;
     
-    // Add rotation animation
-    languageToggle.style.transform = 'rotate(360deg)';
+    // Add rotation and scale animation to button
+    languageToggle.style.transform = 'rotate(360deg) scale(0.9)';
+    
+    // Fade out all content
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(10px)';
+    });
+
     setTimeout(() => {
-        languageToggle.style.transform = '';
+        // Change language
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        localStorage.setItem('language', currentLang);
+        document.documentElement.setAttribute('lang', currentLang);
+        
+        // Update content with staggered animations
+        updateContent(currentLang);
+        
+        // Reset button animation
+        setTimeout(() => {
+            languageToggle.style.transform = '';
+            languageToggle.disabled = false;
+        }, 300);
     }, 300);
 });
 
-// Update content when DOM is loaded
+// Add these styles to the existing ones in styles.css
+const style = document.createElement('style');
+style.textContent = `
+    [data-i18n] {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .language-toggle {
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .language-toggle:disabled {
+        cursor: wait;
+    }
+    
+    .lang-text {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    
+    .language-toggle:hover .lang-text {
+        transform: scale(1.1);
+    }
+`;
+document.head.appendChild(style);
+
+// Initialize language when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    updateContent(currentLang);
+    initializeLanguage();
+    
+    // Add initial fade-in animation to all translatable elements
+    document.querySelectorAll('[data-i18n]').forEach((element, index) => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(10px)';
+        
+        setTimeout(() => {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }, index * 50);
+    });
 });
 
 // Add this to language.js
