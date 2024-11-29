@@ -44,6 +44,7 @@ const translations = {
     email: 'Email',
     message: 'Message',
     send: 'Send Message',
+    emailMe: 'Email Me',
 
     // Work positions
     softwareEngineer: 'Software Engineer',
@@ -53,32 +54,44 @@ const translations = {
     androidIntern: 'Android Development Intern',
 
     // Work descriptions
-    esimDesc: 'Developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).',
-    ibmDesc: 'Creating frontend solutions using jQuery, ReactJS, Bootstrap, Angular, and PrimeNG.',
-    ctbcDesc: 'Developing RPA programs and full-stack development using Java Spring framework.',
-    fansiDesc: 'Writing articles, blockchain research, and social media marketing.',
+    esimDesc:
+      'Developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).',
+    ibmDesc:
+      'Creating frontend solutions using jQuery, ReactJS, Bootstrap, Angular, and PrimeNG.',
+    ctbcDesc:
+      'Developing RPA programs and full-stack development using Java Spring framework.',
+    fansiDesc:
+      'Writing articles, blockchain research, and social media marketing.',
     sabfDesc: 'Developing applications using Java/Kotlin.',
 
     // Services section
     services: 'Services',
     portfolioWebsites: 'Portfolio Websites',
-    portfolioDesc: 'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
+    portfolioDesc:
+      'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
     customScripts: 'Custom Scripts',
-    scriptsDesc: 'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
+    scriptsDesc:
+      'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
     blogDev: 'Blog Development',
-    blogDesc: 'Custom blog platforms with CMS integration, optimized for performance and SEO.',
+    blogDesc:
+      'Custom blog platforms with CMS integration, optimized for performance and SEO.',
     translationService: 'Translation Service',
-    translationDesc: 'Professional Chinese-English translation and localization services for websites, documents, and videos.',
+    translationDesc:
+      'Professional Chinese-English translation and localization services for websites, documents, and videos.',
 
     // Additional timeline entries
     translatorRole: 'Chinese/English Translator',
-    translatorDesc: 'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
+    translatorDesc:
+      'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
     studentCompanion: 'Overseas Student Companion',
-    companionDesc: 'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
+    companionDesc:
+      'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
     generalCoordinator: 'General Coordinator',
-    coordinatorDesc: 'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
+    coordinatorDesc:
+      'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
     skatingRinkEmployee: 'Skating Rink Employee',
-    skatingRinkDesc: 'Responsible for safety and instruction of ice rink visitors.',
+    skatingRinkDesc:
+      'Responsible for safety and instruction of ice rink visitors.',
     contactMe: 'Contact Me',
   },
   zh: {
@@ -126,6 +139,7 @@ const translations = {
     email: '電子郵件',
     message: '訊息',
     send: '發送',
+    emailMe: '寄信給我',
 
     // Work positions
     softwareEngineer: '軟體工程師',
@@ -136,7 +150,8 @@ const translations = {
 
     // Work descriptions
     esimDesc: '開發 eSIM 系統後端 API (Node.js) 與資料庫管理 (MySQL)',
-    ibmDesc: '使用 jQuery、ReactJS、Bootstrap、Angular 和 PrimeNG 開發前端解決方案',
+    ibmDesc:
+      '使用 jQuery、ReactJS、Bootstrap、Angular 和 PrimeNG 開發前端解決方案',
     ctbcDesc: '使用 Java Spring framework 開發 RPA 程式與全端系統',
     fansiDesc: '負責文章撰寫、區塊鏈研究與社群媒體行銷',
     sabfDesc: '使用 Java/Kotlin 開發應用程式',
