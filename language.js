@@ -88,22 +88,34 @@ const translations = {
     // My Services Section
     myServices: 'My Services',
     portfolioWebsites: 'Portfolio Websites',
-    portfolioDesc: 'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
+    portfolioDesc:
+      'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
     customScripts: 'Custom Scripts',
-    scriptsDesc: 'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
+    scriptsDesc:
+      'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
     blogDev: 'Blog Development',
-    blogDesc: 'Custom blog platforms with CMS integration, optimized for performance and SEO.',
+    blogDesc:
+      'Custom blog platforms with CMS integration, optimized for performance and SEO.',
     learnMoreArrow: 'Learn more →',
 
     // Additional work history
     skatingRinkEmployee: 'Skating Rink Employee',
-    skatingRinkDesc: 'Responsible for safety and instruction of ice rink visitors.',
+    skatingRinkDesc:
+      'Responsible for safety and instruction of ice rink visitors.',
     translatorRole: 'Chinese/English Translator',
-    translatorDesc: 'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
+    translatorDesc:
+      'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
     studentCompanion: 'Overseas Student Companion',
-    companionDesc: 'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
+    companionDesc:
+      'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
     generalCoordinator: 'General Coordinator',
-    coordinatorDesc: 'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
+    coordinatorDesc:
+      'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
+    contactMe: 'Contact Me',
+
+    // Translation service
+    translationService: 'Translation Service',
+    translationDesc: 'Professional Chinese-English translation and localization services for websites, documents, and videos.',
   },
   zh: {
     // Home page
@@ -193,7 +205,8 @@ const translations = {
     portfolioWebsites: '作品集網站',
     portfolioDesc: '客製化響應式作品集網站，展現您的作品與個人品牌。',
     customScripts: '客製化腳本',
-    scriptsDesc: '自動化解決方案和 Excel 客製化腳本，優化工作流程並提升生產力。',
+    scriptsDesc:
+      '自動化解決方案和 Excel 客製化腳本，優化工作流程並提升生產力。',
     blogDev: '部落格開發',
     blogDesc: '具有 CMS 整合的客製化部落格平台，針對性能和 SEO 最佳化。',
     learnMoreArrow: '了解更多 →',
@@ -207,6 +220,11 @@ const translations = {
     companionDesc: '負責照顧國際學生，介紹校園文化，並在需要時提供翻譯服務。',
     generalCoordinator: '總召集人',
     coordinatorDesc: '負責規劃和執行年度表演，觀眾超過500人。',
+    contactMe: '聯絡我',
+
+    // Translation service
+    translationService: '翻譯服務',
+    translationDesc: '專業的中英文翻譯和在地化服務，包括網站、文件和影片。',
   },
 };
 
