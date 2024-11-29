@@ -12,7 +12,7 @@ const translations = {
     learnMore: 'Learn More About Me',
 
     // About section
-    journey: 'My Journey',
+    journey: 'Journey',
     journeyText1:
       'My journey in technology began when I was a kid, tinkering with computers to enhance my gaming experience. After that, I studied Computer Science and Information Engineering at National Chung Cheng University, where I developed a interest in software development.',
     journeyText2:
@@ -45,102 +45,65 @@ const translations = {
     message: 'Message',
     send: 'Send Message',
 
-    // Additional translations for timeline items
+    // Work positions
     softwareEngineer: 'Software Engineer',
     applicationDev: 'Application Developer',
     fintechIntern: 'FinTech Development Intern',
     blockchainIntern: 'Blockchain and NFT Intern',
     androidIntern: 'Android Development Intern',
 
-    // Timeline descriptions
-    esimDesc:
-      'Responsible for developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).',
-    ibmDesc:
-      'Collaborated with backend engineers and UI designers to create robust frontend solutions using jQuery, ReactJS, Bootstrap, Angular, and PrimeNG.',
-    ctbcDesc:
-      'Responsible for developing RPA programs and full-stack development using Java Spring framework.',
-    fansiDesc:
-      'Responsible for writing articles, blockchain research, and social media marketing.',
-    sabfDesc: 'Responsible for developing applications using Java/Kotlin.',
+    // Work descriptions
+    esimDesc: 'Developing backend APIs for eSIM system (Node.js) and Database Management (MySQL).',
+    ibmDesc: 'Creating frontend solutions using jQuery, ReactJS, Bootstrap, Angular, and PrimeNG.',
+    ctbcDesc: 'Developing RPA programs and full-stack development using Java Spring framework.',
+    fansiDesc: 'Writing articles, blockchain research, and social media marketing.',
+    sabfDesc: 'Developing applications using Java/Kotlin.',
 
-    // Featured work
-    esimSystem: 'eSIM System',
-    ibmFrontend: 'IBM Frontend',
-    rpaDev: 'RPA Development',
-
-    // Time periods
-    present: 'Present',
-    timeFormat: '{startDate} - {endDate}',
-
-    // Additional translations
-    timeDesc: 'Duration',
-    company: 'Company',
-    role: 'Role',
-    description: 'Description',
-    skills: 'Skills Used',
-    viewProject: 'View Project',
-    sendMessage: 'Send Message',
-
-    // Blog page
-    loading: 'Loading posts...',
-    loadError: 'Failed to load blog posts. Please try again later.',
-
-    // My Services Section
-    myServices: 'My Services',
+    // Services section
+    services: 'Services',
     portfolioWebsites: 'Portfolio Websites',
-    portfolioDesc:
-      'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
+    portfolioDesc: 'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
     customScripts: 'Custom Scripts',
-    scriptsDesc:
-      'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
+    scriptsDesc: 'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
     blogDev: 'Blog Development',
-    blogDesc:
-      'Custom blog platforms with CMS integration, optimized for performance and SEO.',
-    learnMoreArrow: 'Learn more →',
-
-    // Additional work history
-    skatingRinkEmployee: 'Skating Rink Employee',
-    skatingRinkDesc:
-      'Responsible for safety and instruction of ice rink visitors.',
-    translatorRole: 'Chinese/English Translator',
-    translatorDesc:
-      'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
-    studentCompanion: 'Overseas Student Companion',
-    companionDesc:
-      'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
-    generalCoordinator: 'General Coordinator',
-    coordinatorDesc:
-      'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
-    contactMe: 'Contact Me',
-
-    // Translation service
+    blogDesc: 'Custom blog platforms with CMS integration, optimized for performance and SEO.',
     translationService: 'Translation Service',
-    translationDesc:
-      'Professional Chinese-English translation and localization services for websites, documents, and videos.',
+    translationDesc: 'Professional Chinese-English translation and localization services for websites, documents, and videos.',
+
+    // Additional timeline entries
+    translatorRole: 'Chinese/English Translator',
+    translatorDesc: 'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
+    studentCompanion: 'Overseas Student Companion',
+    companionDesc: 'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
+    generalCoordinator: 'General Coordinator',
+    coordinatorDesc: 'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
+    skatingRinkEmployee: 'Skating Rink Employee',
+    skatingRinkDesc: 'Responsible for safety and instruction of ice rink visitors.',
+    contactMe: 'Contact Me',
   },
   zh: {
     // Home page
     home: '首頁',
     blog: '部落格',
-    contact: '聯絡我',
-    greeting: '嗨，我是 Kevin',
-    subtitle: '一位致力於創造有意義數位體驗的軟體工程師。',
+    contact: '聯絡',
+    greeting: '你好，我是 Kevin',
+    subtitle: '致力於創新的軟體工程師',
     fullstack: '全端開發工程師',
     mobile: '行動應用開發者',
-    bilingual: '雙語專業人才',
-    learnMore: '了解更多',
+    bilingual: '中英文翻譯',
+    learnMore: '更多關於我',
 
     // About section
-    journey: '我的歷程',
+    journey: '歷程',
     journeyText1:
-      '我的技術之旅始於國立中正大學，在那裡我主修資訊工程學系。在學術生涯中，我在保持優異的技術和語言能力的同時，也建立了紮實的軟體開發基礎。',
+      '我的技術之路始於童年時期，透過改裝電腦來提升遊戲體驗。之後在國立中正大學主修資訊工程學系，在那裡培養了對軟體開發的熱情。',
     journeyText2:
-      '畢業後，我加入 IBM 擔任應用程式開發人員，與優秀的工程師和設計師合作，創建強大的前端解決方案。這些經驗帶領我到現在的職位，在 VOCOM INTERNATIONAL 負責開發 eSIM 系統的後端 API。',
+      '畢業後加入 IBM 擔任應用程式開發工程師，與優秀的工程師和設計師合作開發前端解決方案。這些經驗帶領我到現在的職位，在 VOCOM INTERNATIONAL 負責開發 eSIM 系統的後端 API。',
     journeyText3:
-      '我的經驗包括在中國信託的金融科技實習、在 Fansi 的區塊鏈技術實習，以及在印度商亞竹基金會的 Android 開發實習。每個角色都為我成為全方位開發者提供了寶貴經驗。',
+      '我的目標是與優秀的人才合作，創造對他人有價值的產品，為世界帶來改變。',
 
     // Skills section
-    skillsExpertise: '技能與專長',
+    skillsExpertise: '專業技能',
     technicalSkills: '技術能力',
     fullstackDev: '全端開發',
     mobileDev: '行動開發',
@@ -162,70 +125,43 @@ const translations = {
     name: '姓名',
     email: '電子郵件',
     message: '訊息',
-    send: '發送訊息',
+    send: '發送',
 
-    // Additional translations for timeline items
+    // Work positions
     softwareEngineer: '軟體工程師',
     applicationDev: '應用程式開發工程師',
     fintechIntern: '金融科技實習生',
-    blockchainIntern: '區塊鏈實習生',
+    blockchainIntern: '區塊鏈與 NFT 實習生',
     androidIntern: 'Android 開發實習生',
 
-    // Timeline descriptions
-    esimDesc: '負責使用 Node.js 和 MySQL 開發 eSIM 系統的後端 API。',
-    ibmDesc:
-      '與後端工程師和UI設計師合作，使用 jQuery、ReactJS、Bootstrap、Angular 和 PrimeNG 進行前端開發。',
-    ctbcDesc: '負責開發 RPA 程式以及使用 Java Spring framework 進行全端開發。',
-    fansiDesc: '負責撰寫文章、區塊鏈研究和社群媒體行銷。',
-    sabfDesc: '負責使用 Java/Kotlin 進行應用程式開發。',
+    // Work descriptions
+    esimDesc: '開發 eSIM 系統後端 API (Node.js) 與資料庫管理 (MySQL)',
+    ibmDesc: '使用 jQuery、ReactJS、Bootstrap、Angular 和 PrimeNG 開發前端解決方案',
+    ctbcDesc: '使用 Java Spring framework 開發 RPA 程式與全端系統',
+    fansiDesc: '負責文章撰寫、區塊鏈研究與社群媒體行銷',
+    sabfDesc: '使用 Java/Kotlin 開發應用程式',
 
-    // Featured work
-    esimSystem: 'eSIM 系統',
-    ibmFrontend: 'IBM 前端開發',
-    rpaDev: 'RPA 開發',
-
-    // Time periods
-    present: '至今',
-    timeFormat: '{startDate} - {endDate}',
-
-    // Additional translations
-    timeDesc: '時間',
-    company: '公司',
-    role: '職位',
-    description: '描述',
-    skills: '使用技能',
-    viewProject: '查看專案',
-    sendMessage: '發送訊息',
-
-    // Blog page
-    loading: '載入文章中...',
-    loadError: '無法載入文章，請稍後再試。',
-
-    // My Services Section
-    myServices: '我的服務',
+    // Services section
+    services: '服務',
     portfolioWebsites: '作品集網站',
-    portfolioDesc: '客製化響應式作品集網站，展現您的作品與個人品牌。',
-    customScripts: '客製化腳本',
-    scriptsDesc:
-      '自動化解決方案和 Excel 客製化腳本，優化工作流程並提升生產力。',
+    portfolioDesc: '客製化響應式作品集網站，展現您的作品與個人特色',
+    customScripts: '自動化腳本',
+    scriptsDesc: '自動化解決方案與 Excel 腳本，提升工作效率',
     blogDev: '部落格開發',
-    blogDesc: '具有 CMS 整合的客製化部落格平台，針對性能和 SEO 最佳化。',
-    learnMoreArrow: '了解更多 →',
+    blogDesc: '整合 CMS 的客製化部落格，優化效能與搜尋引擎排名',
+    translationService: '翻譯服務',
+    translationDesc: '專業中英文翻譯服務，包含網站、文件與影片在地化',
 
-    // Additional work history
-    skatingRinkEmployee: '溜冰場工作人員',
-    skatingRinkDesc: '負責溜冰場訪客的安全指導。',
+    // Additional timeline entries
     translatorRole: '中英文翻譯',
-    translatorDesc: '負責網站文件的中英文翻譯，以及專案影片的英文旁白。',
+    translatorDesc: '負責網站文件的中英文翻譯，以及專案影片的英文旁白配音。',
     studentCompanion: '國際學生輔導員',
-    companionDesc: '負責照顧國際學生，介紹校園文化，並在需要時提供翻譯服務。',
+    companionDesc: '負責照顧國際學生，介紹校園文化，並在需要時提供翻譯協助。',
     generalCoordinator: '總召集人',
     coordinatorDesc: '負責規劃和執行年度表演，觀眾超過500人。',
+    skatingRinkEmployee: '溜冰場工作人員',
+    skatingRinkDesc: '負責溜冰場訪客的安全指導。',
     contactMe: '聯絡我',
-
-    // Translation service
-    translationService: '翻譯服務',
-    translationDesc: '專業的中英文翻譯和在地化服務，包括網站、文件和影片。',
   },
 };
 
