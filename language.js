@@ -100,16 +100,16 @@ const translations = {
     blog: '部落格',
     contact: '聯絡',
     greeting: '你好，我是 Kevin',
-    subtitle: '致力於創新的軟體工程師',
+    subtitle: '軟體工程師',
     fullstack: '全端開發工程師',
-    mobile: '行動應用開發者',
+    mobile: '行動 APP 開發者',
     bilingual: '中英文翻譯',
     learnMore: '更多關於我',
 
     // About section
     journey: '歷程',
     journeyText1:
-      '我的技術之路始於童年時期，透過改裝電腦來提升遊戲體驗。之後在國立中正大學主修資訊工程學系，在那裡培養了對軟體開發的熱情。',
+      '我的旅程從遊戲開始，當時只想改裝電腦來提升遊戲體驗。之後在國立中正大學主修資訊工程學系，在那裡培養了對軟體開發的熱情。',
     journeyText2:
       '畢業後加入 IBM 擔任應用程式開發工程師，與優秀的工程師和設計師合作開發前端解決方案。這些經驗帶領我到現在的職位，在 VOCOM INTERNATIONAL 負責開發 eSIM 系統的後端 API。',
     journeyText3:
@@ -119,7 +119,7 @@ const translations = {
     skillsExpertise: '專業技能',
     technicalSkills: '技術能力',
     fullstackDev: '全端開發',
-    mobileDev: '行動開發',
+    mobileDev: '行動 APP 開發',
     devTools: '開發工具',
     professionalSkills: '專業技能',
     projectManagement: '專案管理',
