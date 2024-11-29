@@ -84,6 +84,16 @@ const translations = {
     // Blog page
     loading: 'Loading posts...',
     loadError: 'Failed to load blog posts. Please try again later.',
+
+    // My Services Section
+    myServices: 'My Services',
+    portfolioWebsites: 'Portfolio Websites',
+    portfolioDesc: 'Custom-built, responsive portfolio websites tailored to showcase your work and personal brand.',
+    customScripts: 'Custom Scripts',
+    scriptsDesc: 'Automation solutions and custom Excel scripts to streamline your workflow and boost productivity.',
+    blogDev: 'Blog Development',
+    blogDesc: 'Custom blog platforms with CMS integration, optimized for performance and SEO.',
+    learnMoreArrow: 'Learn more →',
   },
   zh: {
     // Home page
@@ -167,6 +177,16 @@ const translations = {
     // Blog page
     loading: '載入文章中...',
     loadError: '無法載入文章，請稍後再試。',
+
+    // My Services Section
+    myServices: '我的服務',
+    portfolioWebsites: '作品集網站',
+    portfolioDesc: '客製化響應式作品集網站，展現您的作品與個人品牌。',
+    customScripts: '客製化腳本',
+    scriptsDesc: '自動化解決方案和 Excel 客製化腳本，優化工作流程並提升生產力。',
+    blogDev: '部落格開發',
+    blogDesc: '具有 CMS 整合的客製化部落格平台，針對性能和 SEO 最佳化。',
+    learnMoreArrow: '了解更多 →',
   },
 };
 
