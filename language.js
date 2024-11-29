@@ -18,7 +18,7 @@ const translations = {
     journeyText2:
       "After graduation, I joined IBM as an Application Developer, where I collaborated with talented engineers and designers to create frontend solutions. This experience led me to my current role at VOCOM INTERNATIONAL, where I'm responsible for developing backend APIs for eSIM systems.",
     journeyText3:
-      'My diverse experience includes internships in FinTech at CTBC Bank, blockchain technology at Fansi, and Android development at SABF. Each role has contributed to my growth as a well-rounded developer.',
+      'My goal is to make a difference in the world by working with great people to create products that are useful to others.',
 
     // Skills section
     skillsExpertise: 'Skills & Expertise',
@@ -115,7 +115,8 @@ const translations = {
 
     // Translation service
     translationService: 'Translation Service',
-    translationDesc: 'Professional Chinese-English translation and localization services for websites, documents, and videos.',
+    translationDesc:
+      'Professional Chinese-English translation and localization services for websites, documents, and videos.',
   },
   zh: {
     // Home page
