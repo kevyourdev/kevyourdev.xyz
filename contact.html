@@ -1,82 +1,127 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - kevyourdev.xyz</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="/favicon/favicon-32x32.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="bg-white text-black">
+  </head>
+  <body class="bg-white text-black">
     <div class="container mx-auto px-4">
-        <header class="flex justify-between items-center py-6 fade-in sticky top-0 bg-white z-50">
-            <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
-            <!-- Mobile menu button -->
-            <button class="md:hidden menu-button">
-                Menu <i class="fas fa-bars"></i>
-            </button>
-            <!-- Desktop navigation -->
-            <nav class="hidden md:flex space-x-6 mr-6">
-                <a href="/" class="hover:text-gray-500" data-i18n="home">Home</a>
-                <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog">Blog</a>
-                <a href="/contact.html" class="hover:text-gray-500" data-i18n="contact">Contact</a>
-            </nav>
-            <!-- Mobile navigation -->
-            <nav class="mobile-nav md:hidden">
-                <button class="close-menu absolute top-8 right-8">
-                    <i class="fas fa-times text-2xl"></i>
-                </button>
-                <a href="/" class="hover:text-gray-500" data-i18n="home">Home</a>
-                <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog">Blog</a>
-                <a href="/contact.html" class="hover:text-gray-500" data-i18n="contact">Contact</a>
-            </nav>
-        </header>
+      <header
+        class="flex justify-between items-center py-6 fade-in sticky top-0 bg-white z-50"
+      >
+        <a href="/" class="text-3xl font-bold logo hover:text-gray-500">KW</a>
+        <!-- Mobile menu button -->
+        <button class="md:hidden menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Desktop navigation -->
+        <nav class="hidden md:flex space-x-6 mr-6">
+          <a href="/" class="hover:text-gray-500" data-i18n="home">Home</a>
+          <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog"
+            >Blog</a
+          >
+          <a
+            href="/contact.html"
+            class="hover:text-gray-500"
+            data-i18n="contact"
+            >Contact</a
+          >
+        </nav>
+        <!-- Mobile navigation -->
+        <nav class="mobile-nav md:hidden">
+          <button class="close-menu absolute top-8 right-8">
+            <i class="fas fa-times text-2xl"></i>
+          </button>
+          <a href="/" class="hover:text-gray-500" data-i18n="home">Home</a>
+          <a href="/blog.html" class="hover:text-gray-500" data-i18n="blog"
+            >Blog</a
+          >
+          <a
+            href="/contact.html"
+            class="hover:text-gray-500"
+            data-i18n="contact"
+            >Contact</a
+          >
+        </nav>
+      </header>
 
-        <main class="py-12">
-            <h1 class="text-6xl font-bold text-center mb-8 slide-up" data-i18n="getInTouch">Get in Touch</h1>
-            
-            <!-- Social Media Links Section -->
-            <div class="max-w-xl mx-auto mb-12">
-                <div class="flex justify-center space-x-8 mb-8">
-                    <a href="https://www.linkedin.com/in/kevyourdev" class="flex flex-col items-center hover:text-gray-600 transition-colors">
-                        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-2">
-                            <i class="fab fa-linkedin-in text-white text-2xl"></i>
-                        </div>
-                        <span class="text-sm">LinkedIn</span>
-                    </a>
-                    <a href="https://www.instagram.com/wyu3h/" class="flex flex-col items-center hover:text-gray-600 transition-colors">
-                        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-2">
-                            <i class="fab fa-instagram text-white text-2xl"></i>
-                        </div>
-                        <span class="text-sm">Instagram</span>
-                    </a>
-                    <a href="https://github.com/kevyourdev" class="flex flex-col items-center hover:text-gray-600 transition-colors">
-                        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-2">
-                            <i class="fab fa-github text-white text-2xl"></i>
-                        </div>
-                        <span class="text-sm">GitHub</span>
-                    </a>
-                </div>
-                
-                <!-- Gmail Link -->
-                <div class="text-center mb-12">
-                    <a href="mailto:kevyourdev@gmail.com" class="inline-flex items-center space-x-2 bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors">
-                        <i class="fas fa-envelope"></i>
-                        <span data-i18n="emailMe">Email Me</span>
-                    </a>
-                </div>
-            </div>
-        </main>
+      <main class="py-12">
+        <h1
+          class="text-6xl font-bold text-center mb-8 slide-up"
+          data-i18n="getInTouch"
+        >
+          Get in Touch
+        </h1>
+
+        <!-- Social Media Links Section -->
+        <div class="max-w-xl mx-auto mb-12">
+          <div class="flex justify-center space-x-8 mb-8">
+            <a
+              href="https://www.linkedin.com/in/kevyourdev"
+              class="flex flex-col items-center hover:text-gray-600 transition-colors"
+            >
+              <div
+                class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-2"
+              >
+                <i class="fab fa-linkedin-in text-white text-2xl"></i>
+              </div>
+              <span class="text-sm">LinkedIn</span>
+            </a>
+            <a
+              href="https://www.instagram.com/wyu3h/"
+              class="flex flex-col items-center hover:text-gray-600 transition-colors"
+            >
+              <div
+                class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-2"
+              >
+                <i class="fab fa-instagram text-white text-2xl"></i>
+              </div>
+              <span class="text-sm">Instagram</span>
+            </a>
+            <a
+              href="https://github.com/kevyourdev"
+              class="flex flex-col items-center hover:text-gray-600 transition-colors"
+            >
+              <div
+                class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-2"
+              >
+                <i class="fab fa-github text-white text-2xl"></i>
+              </div>
+              <span class="text-sm">GitHub</span>
+            </a>
+          </div>
+
+          <!-- Gmail Link -->
+          <div class="text-center mb-12">
+            <a
+              href="mailto:kevyourdev@gmail.com"
+              class="inline-flex items-center space-x-2 bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors"
+            >
+              <i class="fas fa-envelope"></i>
+              <span data-i18n="emailMe">Email Me</span>
+            </a>
+          </div>
+        </div>
+      </main>
     </div>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
+      <i class="fas fa-moon"></i>
     </button>
 
     <script src="theme.js"></script>
     <script src="language.js"></script>
     <script src="menu.js"></script>
-</body>
+  </body>
 </html>
