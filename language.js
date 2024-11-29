@@ -94,6 +94,16 @@ const translations = {
     blogDev: 'Blog Development',
     blogDesc: 'Custom blog platforms with CMS integration, optimized for performance and SEO.',
     learnMoreArrow: 'Learn more →',
+
+    // Additional work history
+    skatingRinkEmployee: 'Skating Rink Employee',
+    skatingRinkDesc: 'Responsible for safety and instruction of ice rink visitors.',
+    translatorRole: 'Chinese/English Translator',
+    translatorDesc: 'Responsible for Chinese/English translation of website documentation, narrating in English for project videos.',
+    studentCompanion: 'Overseas Student Companion',
+    companionDesc: 'Responsible for taking care of international students, introducing our campus culture, and translating when needed.',
+    generalCoordinator: 'General Coordinator',
+    coordinatorDesc: 'Responsible for the planning and execution of annual performance with over 500 participants in the audience.',
   },
   zh: {
     // Home page
@@ -187,6 +197,16 @@ const translations = {
     blogDev: '部落格開發',
     blogDesc: '具有 CMS 整合的客製化部落格平台，針對性能和 SEO 最佳化。',
     learnMoreArrow: '了解更多 →',
+
+    // Additional work history
+    skatingRinkEmployee: '溜冰場工作人員',
+    skatingRinkDesc: '負責溜冰場訪客的安全指導。',
+    translatorRole: '中英文翻譯',
+    translatorDesc: '負責網站文件的中英文翻譯，以及專案影片的英文旁白。',
+    studentCompanion: '國際學生輔導員',
+    companionDesc: '負責照顧國際學生，介紹校園文化，並在需要時提供翻譯服務。',
+    generalCoordinator: '總召集人',
+    coordinatorDesc: '負責規劃和執行年度表演，觀眾超過500人。',
   },
 };
 
