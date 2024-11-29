@@ -5,7 +5,7 @@ const translations = {
     blog: 'Blog',
     contact: 'Contact',
     greeting: "Hey, I'm Kevin",
-    subtitle: 'A Software Engineer trying to make a difference.',
+    subtitle: 'A Software Engineer just trying to have fun.',
     fullstack: 'Full-stack Developer',
     mobile: 'Mobile App Developer',
     bilingual: 'English/Chinese Translator',
@@ -26,7 +26,7 @@ const translations = {
     fullstackDev: 'Full-stack Development',
     mobileDev: 'Mobile Development',
     devTools: 'Development Tools',
-    professionalSkills: 'Professional Skills',
+    professionalSkills: 'Other Skills',
     projectManagement: 'Project Management',
     languageServices: 'Language Services',
 
@@ -118,12 +118,12 @@ const translations = {
     // Skills section
     skillsExpertise: '專業技能',
     technicalSkills: '技術能力',
-    fullstackDev: '全端開發',
+    fullstackDev: '網頁開發',
     mobileDev: '行動 APP 開發',
     devTools: '開發工具',
-    professionalSkills: '專業技能',
+    professionalSkills: '其他技能',
     projectManagement: '專案管理',
-    languageServices: '語言服務',
+    languageServices: '翻譯服務',
 
     // Work Timeline
     workTimeline: '工作經歷',
